@@ -19,6 +19,10 @@ let package = Package(
     .library(
       name: "Atomics",
       targets: ["Atomics"]),
+    .library(
+      name: "_AtomicsShims",
+      type: .static,
+      targets: ["_AtomicsShims"]),
   ],
   targets: [
     .target(
